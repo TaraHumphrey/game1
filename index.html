@@ -17,10 +17,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to right, #4ca1af, #c4e0e5);
+            background: linear-gradient(to right, #00999E, #c4e0e5);
             font-family: 'Arial', sans-serif;
         }
         
+
         .game-title {
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -82,7 +83,7 @@
         }
         
         .back-face {
-            background-color: #005eb8;
+            background-color: #00999E;
             color: white;
             font-size: 2rem;
         }
@@ -90,7 +91,7 @@
         button {
             padding: 10px 20px;
             font-size: 1rem;
-            background-color: #41b6e6;
+            background-color: #00999E;
             color: white;
             border: none;
             border-radius: 5px;
@@ -100,11 +101,29 @@
         }
         
         button:hover {
-            background-color: #005eb8;
+            background-color: #007a7e;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        .linkedin-link, .github-link {
+            color: white;
+            text-decoration: underline;
+            margin-left: 5px;
+        }
+        
+        .linkedin-link:hover, .github-link:hover {
+            color: #e0e0e0;
         }
     </style>
 </head>
 <body>
+
     <h1 class="game-title">Healthcare Memory Game</h1>
     
     <div class="game-info">
@@ -117,6 +136,11 @@
     </div>
     
     <button id="restart">Restart Game</button>
+    
+    <div class="footer">
+        <p>© 2025 THC Healthcare. <a href="https://linkedin.com/in/yourprofile" target="_blank" class="linkedin-link">Connect on LinkedIn</a></p>
+        <p><a href="https://github.com/yourusername/healthcare-memory-game" target="_blank" class="github-link">View on GitHub</a></p>
+    </div>
     
     <script>
         // Healthcare-themed symbols using emoji
